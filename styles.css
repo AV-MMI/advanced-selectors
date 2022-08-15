@@ -1,0 +1,29 @@
+.child {
+	width: 200px;
+	height: 200px;
+	background-color: #d6d6d6;
+}
+
+.grand-child {
+	width: 100px;
+	height: 100px;
+	background-color: #bebebe;
+}
+
+main > div {
+	margin: 10px;
+}
+
+main > div > div {
+	position: relative;
+	top: 25%;
+	left: 25%;
+}
+
+.group2 + div {
+	border: 2px solid red;
+}
+
+.group1 ~ div {
+	border-color: 1px solid black;
+}
