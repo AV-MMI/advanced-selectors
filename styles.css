@@ -10,8 +10,22 @@
 	background-color: #bebebe;
 }
 
+[class^="great"] {
+	border: 1px solid green;
+}
+
+.group2 + div {
+	border: 2px solid red;
+}
+
+.group1 ~ div:hover {
+	border: 2px solid black;
+}
+
 main > div {
 	margin: 10px;
+	border: 2px solid white;
+	transition: .3s;
 }
 
 main > div > div {
@@ -20,10 +34,19 @@ main > div > div {
 	left: 25%;
 }
 
-.group2 + div {
-	border: 2px solid red;
+p::first-line {
+	color: red;
 }
 
-.group1 ~ div {
-	border-color: 1px solid black;
+p::first-letter {
+	font-size: 1.5em;
+	color: crimson;
+}
+
+p::selection {
+	color: blue;
+}
+
+a[lang|="en"] {
+	color: red;
 }
